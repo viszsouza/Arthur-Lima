@@ -1,0 +1,205 @@
+@import url("base.css");
+
+header{
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 30% 45%;
+}
+
+.fundo{
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(53,33,28,1) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+nav a{
+    color: var(--marrom-dark);
+    font-size: 15px;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+nav a:hover{
+    color: var(--marrom);
+    font-size: 18px;
+}
+
+.button-nav button{
+    background-color: var(--marrom-dark);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: var(--branco);
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.button-nav button:hover{
+    background-color: var(--marrom);
+    font-size: 16px;
+}
+
+.text-header{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-header h1{
+    margin-top: 10%;
+    width: 60%;
+    text-align: center;
+    font-size: 26px;
+}
+
+.text-header button{
+    background-color: var(--marrom);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: var(--branco);
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: 300ms;
+    margin-top: 20px;
+}
+
+.text-header button:hover{
+    background-color: var(--marrom-dark);
+    font-size: 16px;
+    border: 2px solid var(--marrom);
+}
+
+.quem-sou{
+    background-color: var(--marrom-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 20px 40px 20px;
+    gap: 40px;
+}
+
+.img-qs{
+    width: 30%;
+}
+
+.img-qs img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    transition: 300ms;
+    box-shadow: var(--shadow);
+}
+
+.img-qs img:hover{
+    transform: scale(1.03);
+    opacity: 70%;
+}
+
+.text-qs{
+    width: 50%;
+    color: var(--branco);
+}
+
+.text-qs h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text-qs p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.pd{
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px 40px 20px;
+    background-color: var(--marrom);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    gap: 40px;
+}
+
+.text-pd{
+    width: 50%;
+}
+
+.text-pd h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text-pd p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.img-pd{
+    width: 300px;
+    height: 300px;
+}
+
+.img-pd img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+
+
+@media (max-width: 900px){
+    .quem-sou{
+        flex-direction: column;
+    }
+
+    .img-qs{
+        width: 60%;
+    }
+
+    .text-qs{
+        width: 60%;
+    }
+    
+
+    .pd{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 530px){
+    nav{
+        flex-direction: column;
+    }
+
+    .quem-sou{
+        padding: 20% 20px 40px 20px;
+    }
+}
+
+
+
