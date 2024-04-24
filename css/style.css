@@ -1,5 +1,23 @@
 @import url("base.css");
 
+
+.flutua{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.flutua img{
+    width: 100px;
+    transition: 300ms;
+}
+
+.flutua img:hover{
+    transform: scale(1.1);
+}
+
 header{
     background-image: url("../img/bg.png");
     background-repeat: no-repeat no-repeat;
@@ -10,7 +28,7 @@ header{
 }
 
 .fundo{
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(53,33,28,1) 100%);
+    background: var(--gradiente);
     width: 100%;
     height: 100%;
 }
@@ -169,6 +187,165 @@ nav a:hover{
     height: 300px;
     border-radius: 50%;
     box-shadow: var(--shadow);
+    transition: 300ms;
+}
+
+.img-pd img:hover{
+    transform: scale(1.05);
+    filter: brightness(10%);
+}
+
+.text-serviços{
+    color: var(--branco);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.serviços{
+    background-color: var(--marrom-dark);
+    padding: 40px 20px;
+}
+
+.container-sv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container-prod{
+    background-color: var(--branco);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 200ms;
+    box-shadow: var(--shadow);
+}
+
+.container-prod:hover{
+    transform: scale(1.05);
+}
+
+.img-prod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-prod img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.duvidas{
+    background-color: var(--marrom);
+    padding: 40px 20px;
+}
+
+.title-duvidas{
+    color: var(--branco);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.container-duvidas{
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 1200px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 900px){
+    .container-duvidas{
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+    }
+}
+
+.duvida-cont{
+    border: 2px solid var(--marrom-dark);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.duvida-cont p{
+    font-weight: 500;
+}
+
+.services{
+    background-color: var(--marrom-dark);
+    padding: 40px 20px;
+}
+
+.title-srv{
+    color: var(--branco);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.container-services-geral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.container-services{
+    background-color: var(--marrom);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.container-services p{
+    font-weight: 500;
+}
+
+span{
+    color: var(--branco);
+}
+
+.title-service h1{
+    font-size: 25px;
+    color: var(--branco);
+}
+
+.preco{
+    display: flex;
+    margin-bottom: 30px;
+}
+.preco p{
+    margin-top: 10px;
+}
+
+.desc p{
+    margin-bottom: 20px;
+}
+
+.btn-service button{
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    background-color: var(--branco);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.btn-service button:hover{
+    transform: scale(1.05);
 }
 
 
@@ -178,16 +355,36 @@ nav a:hover{
     }
 
     .img-qs{
-        width: 60%;
+        width: 100%;
     }
 
     .text-qs{
-        width: 60%;
+        width: 100%;
     }
     
 
     .pd{
         flex-direction: column;
+    }
+
+    .text-pd{
+        width: 100%;
+    }
+
+    .container-sv{
+        flex-direction: column;
+    }
+
+    .container-prod{
+        max-width: 100%;
+    }
+
+    .container-services-geral{
+        flex-direction: column;
+    }
+
+    .container-services{
+        width: 100%;
     }
 }
 
