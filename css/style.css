@@ -260,8 +260,6 @@ nav a:hover{
     margin-right: auto;
     margin-top: 50px;
     max-width: 1200px;
-    padding: 0px 20px 0px 20px;
-    margin-bottom: 50px;
 }
 
 @media (min-width: 900px){
@@ -276,8 +274,17 @@ nav a:hover{
     border-radius: 20px;
 }
 
+.max-wid{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
 .duvida-cont p{
     font-weight: 500;
+    text-align: justify;
 }
 
 .services{
@@ -350,6 +357,14 @@ span{
 
 
 @media (max-width: 900px){
+    nav{
+        display: none;
+    }
+
+    .text-header{
+        padding-top: 10%;
+    }
+
     .quem-sou{
         flex-direction: column;
     }
@@ -389,8 +404,9 @@ span{
 }
 
 @media (max-width: 530px){
-    nav{
-        flex-direction: column;
+
+    .text-header{
+        padding-top: 20%;
     }
 
     .quem-sou{
