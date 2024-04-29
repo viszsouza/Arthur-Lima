@@ -229,6 +229,10 @@ nav a:hover{
     transform: scale(1.05);
 }
 
+.text-prod p{
+    text-align: justify;
+}
+
 .img-prod{
     display: flex;
     align-items: center;
@@ -338,6 +342,7 @@ span{
 
 .desc p{
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .btn-service button{
