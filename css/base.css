@@ -23,6 +23,12 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Estilo para impedir de selecionar imagens e arrastá-las pela tela */
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 /*Footer*/
 
 footer {
