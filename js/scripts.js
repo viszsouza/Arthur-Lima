@@ -51,3 +51,31 @@ if (window.innerWidth <= 750) {
     });
   }));
   
+
+// Obtenha o modal
+const modal = document.getElementById("modal")
+
+// Obtenha todos os botões que devem abrir o modal
+const buttons = document.querySelectorAll(".open-modal");
+
+// Obtenha o elemento de fechamento do modal
+const close = document.getElementById("close-modal")
+
+// Função para abrir o modal
+function openModal() {
+  modal.style.display = "flex";
+}
+
+// Função para fechar o modal
+function closeModal() {
+  modal.style.display = "none";
+  body.style.backgroundColor = ""
+}
+
+// Adicione um evento de clique para cada botão para abrir o modal
+buttons.forEach(function(button) {
+  button.addEventListener("click", openModal);
+});
+
+// Adicione um evento de clique ao elemento de fechamento do modal para fechá-lo
+close.addEventListener("click", closeModal);

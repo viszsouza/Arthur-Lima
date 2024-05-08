@@ -364,6 +364,63 @@ span{
 }
 
 
+/* MODAL */
+
+.modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#close-modal{
+    color: var(--marrom);
+    margin-left: 185px;
+    cursor: pointer;
+}
+
+.container-modal {
+    z-index: 99;
+    position: fixed;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--branco);
+    padding: 3%;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    background-color: var(--marrom);
+    color: var(--branco);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+form button:hover{
+    transform: scale(1.05);
+}
+
 @media (max-width: 900px){
     nav{
         display: none;
@@ -385,7 +442,6 @@ span{
         width: 100%;
     }
     
-
     .pd{
         flex-direction: column;
     }
@@ -409,6 +465,10 @@ span{
     .container-services{
         width: 100%;
     }
+
+    .container-modal{
+        padding: 7%;
+    }
 }
 
 @media (max-width: 530px){
@@ -427,6 +487,10 @@ span{
 
     .text-header h1{
         font-size: 15px;
+    }
+
+    .container-modal{
+        padding: 10%;
     }
 }
 

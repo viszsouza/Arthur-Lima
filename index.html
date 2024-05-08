@@ -32,14 +32,14 @@
                 <a href="#services">Serviços</a>
                 <a href="#planos">Planos</a>
                 <div class="button-nav">
-                    <a href=""><button>Solicitar orçamento</button></a>
+                    <button class="open-modal">Solicitar orçamento</button>
                 </div>
             </nav>
 
             <div class="text-header">
                 <h1>ALCANCE NOVOS CLIENTES COM O TRÁFEGO PAGO E MELHORE OS SEUS RESULTADOS!</h1>
                 <p>ALCANCE LEADS QUALIFICADOS!</p>
-                <a href=""><button>Solicitar orçamento</button></a>
+                <button class="open-modal">Solicitar orçamento</button>
             </div>
         </div>
     </header>
@@ -182,7 +182,7 @@
                         <p><span>></span> Desenvolvimento estratégico de campanhas publicitárias, voltadas para alcançar os objetivos do negócio</p>
                     </div>
                     <div class="btn-service">
-                        <a href=""><button>Solicitar orçamento</button></a>
+                        <button class="open-modal">Solicitar orçamento</button>
                     </div>
                 </div>
 
@@ -203,7 +203,7 @@
                         <p><span>></span> Desenvolvimento estratégico de campanhas publicitárias, voltadas para alcançar os objetivos do negócio</p>
                     </div>
                     <div class="btn-service">
-                        <a href=""><button>Solicitar orçamento</button></a>
+                        <button class="open-modal">Solicitar orçamento</button>
                     </div>
                 </div>
 
@@ -224,7 +224,7 @@
                         <p><span>></span> Desenvolvimento estratégico de campanhas publicitárias, voltadas para alcançar os objetivos do negócio</p>
                     </div>
                     <div class="btn-service">
-                        <a href=""><button>Solicitar orçamento</button></a>
+                        <button class="open-modal">Solicitar orçamento</button>
                     </div>
                 </div>
 
@@ -318,6 +318,42 @@
     </section>
     <!-- Fim Depoimentos -->
 
+    <!-- MODAL -->
+
+    <section class="modal" id="modal">
+        <div class="container-modal">
+            
+                <form action="https://formsubmit.co/vini.nelso@gmail.com" method="POST">
+                    <h1 id="close-modal">X</h1>
+
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="seuemail@email.com" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" name="telefone" placeholder="(00) 0 0000-0000" required>
+
+                    <!-- Scripts FormSubmit -->
+                    <input type="hidden" name="_next" value="https://api.whatsapp.com/send?phone=5581985742601&text=Oi!">
+
+                    <input type="hidden" name="_subject" value="Novo contato! | Site">
+
+                    <input type="text" name="_honey" style="display:none">
+
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <!-- Botão de Envio -->
+                    <button type="submit">Ir para o Whatsapp</button>
+                </form>
+            
+        </div>
+
+    </section>
+
+    <!-- MODAL -->
+
     <footer>
         <div class="container-footer">
             <ul>
@@ -334,5 +370,7 @@
     <div id="copyright">
         &copy; 2024 - <a href="" target="_blank">@visz.dev</a> | Todos os Direitos Reservados 
     </div> 
+
+    <script src="js/script.js"></script>
 </body>
 </html>
