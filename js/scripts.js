@@ -1,19 +1,3 @@
-// Seleção da imagem principal
-// Seleção da imagem principal
-if (window.innerWidth <= 750) {
-  document.querySelector('.desktop').style.display = 'none';
-  document.querySelector('.mobile').style.display = 'block';
-}
-window.addEventListener('resize', () => {
-  if (window.innerWidth <= 750) {
-    document.querySelector('.desktop').style.display = 'none';
-    document.querySelector('.mobile').style.display = 'block';
-  } else {
-    document.querySelector('.mobile').style.display = 'none';
-    document.querySelector('.desktop').style.display = 'block';
-  }
-})
-
 // Index do item do meio atual
 let currentIndex = window.innerWidth <= 750? 0 : 1;
 
