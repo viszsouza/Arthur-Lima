@@ -62,15 +62,15 @@ section#depoimentos-secao {
 
 /* Colorização dos cards de depoimento */
 .depoimento:nth-child(3n + 1) {
-    background-color: #F6BF73;
+    background-color: #eb5e28;
 }
 
 .depoimento:nth-child(3n + 2) {
-    background-color: #EBD2AC;
+    background-color: #252422;
 }
 
 .depoimento:nth-child(3n + 3) {
-    background-color: #FCF4DC;
+    background-color: #eb5e28;
 }
 
 /* Perfil da pessoa que depôs */
@@ -93,21 +93,21 @@ section#depoimentos-secao {
 
 /* Nome da pessoa que depôs */
 .nome-depoimento {
-    color: #001122;
+    color: var(--branco);
     font-size: 20px;
     font-weight: 600;
 }
 
 /* Instagram da pessoa que depôs */
 .instagram-depoimento {
-    color: #666666;
+    color: #c6c6c6;
     font-size: 14px;
     font-weight: 500;
 }
 
 /* Texto do depoimento */
 .comentario-depoimento {
-    color: #666666;
+    color: var(--branco);
     font-size: 16px;
     font-weight: 500;
 

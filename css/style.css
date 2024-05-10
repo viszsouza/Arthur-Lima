@@ -362,6 +362,13 @@ nav a:hover{
 }
 
 .title-srv{
+    color: var(--branco);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.title-dep{
     color: var(--marrom-dark);
     text-align: center;
     font-size: 25px;
