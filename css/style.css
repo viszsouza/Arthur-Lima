@@ -15,6 +15,7 @@
     width: 100px;
     transition: 300ms;
     z-index: 99;
+    cursor: pointer;
 }
 
 .flutua img:hover{
