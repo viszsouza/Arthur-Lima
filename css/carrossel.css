@@ -3,14 +3,13 @@ section#depoimentos-secao {
     position: relative;
     padding: 100px 0;
     margin: 0 auto;
-    background-color: black;
-    z-index: 9px;
 }
 
 /* Estilização dos botôes do carousel */
 #depoimentos-secao .carousel-button {
     position: absolute;
     top: calc(50% - 18px);
+
     cursor: pointer;
     height: 36px;
     width: 36px;
@@ -63,15 +62,15 @@ section#depoimentos-secao {
 
 /* Colorização dos cards de depoimento */
 .depoimento:nth-child(3n + 1) {
-    background-color: #eb5e28;
+    background-color: #F6BF73;
 }
 
 .depoimento:nth-child(3n + 2) {
-    background-color: #252422;
+    background-color: #EBD2AC;
 }
 
 .depoimento:nth-child(3n + 3) {
-    background-color: #eb5e28;
+    background-color: #FCF4DC;
 }
 
 /* Perfil da pessoa que depôs */
@@ -94,21 +93,21 @@ section#depoimentos-secao {
 
 /* Nome da pessoa que depôs */
 .nome-depoimento {
-    color: white;
+    color: #001122;
     font-size: 20px;
     font-weight: 600;
 }
 
 /* Instagram da pessoa que depôs */
 .instagram-depoimento {
-    color: #cfcfcf;
+    color: #666666;
     font-size: 14px;
     font-weight: 500;
 }
 
 /* Texto do depoimento */
 .comentario-depoimento {
-    color: white;
+    color: #666666;
     font-size: 16px;
     font-weight: 500;
 
@@ -120,9 +119,12 @@ section#depoimentos-secao {
     text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 620px){
+/* Media query para ajustar as propriedades vistas anteriormente para celular*/
+@media screen and (max-width: 620px) {
     section#depoimentos-secao {
-        
+        margin-bottom: 30px;
+        padding: 20px 10px 20px 10px;
+        max-width: 350px;
     }
 
     #depoimentos-secao button#anterior {
@@ -146,17 +148,13 @@ section#depoimentos-secao {
         min-width: 100%;
         max-width: 300px
     }
-
 }
 
-@media screen and (min-width: 621px) and (max-width: 750px){
-    .secao {
-        margin: 0 auto;
-        padding: 0;
-    }
-
+/* Media query para ajustar as propriedades vistas anteriormente para telas intermediárias*/
+@media screen and (min-width: 621px) and (max-width: 750px) {
     #depoimentos-secao {
-        
+        min-width: 600px;
+        max-width: 600px;
         padding: 0;
     }
 
@@ -174,16 +172,12 @@ section#depoimentos-secao {
     }
 }
 
-@media screen and (min-width: 751px) and (max-width: 1100px){
-    .secao {
-        margin: 0 auto;
-        padding: 0;
-        
-    }
-
+/* Media query para ajustar as propriedades vistas anteriormente para tablets*/
+@media screen and (min-width: 751px) and (max-width: 1100px) {
     section#depoimentos-secao {
         padding: 50px 0;
-        
+        min-width: 72px;
+        max-width: 720px;
     }
 
     #depoimentos-secao button#anterior {
