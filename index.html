@@ -64,7 +64,7 @@
 
     <section class="quem-sou" id="quem-sou">
         <div class="img-qs">
-            <a href="https://www.instagram.com/arthuramancio.lima/" target="_blank"><img src="img/arthur.png" alt="Imagem Arthur Lima"></a>
+            <img src="img/arthur.png" alt="Imagem Arthur Lima">
         </div>
         
         <div class="text-qs">
@@ -141,7 +141,7 @@
         <div class="container-negocios">
             <div class="cont-negocios">
                 <img src="img/joias.png" alt="Imagem Joias">
-                <h1 class="text-negocios">Joias/Semi-joias</h1>
+                <h1 class="text-negocios">Joias/Semijoias</h1>
             </div>
 
             <div class="cont-negocios">
@@ -255,7 +255,7 @@
                     <div class="title-service">
                         <h1>_Meta Ads</h1>
                     </div>
-                    <p>Preços a partir de</p>
+                    <p>A partir de</p>
                     <div class="preco">
                         <h1>R$ 650</h1>
                         <p>/mês</p>
@@ -276,7 +276,7 @@
                     <div class="title-service">
                         <h1>_TikTok Ads</h1>
                     </div>
-                    <p>Preços a partir de</p>
+                    <p>A partir de</p>
                     <div class="preco">
                         <h1>R$ 650</h1>
                         <p>/mês</p>
@@ -297,7 +297,7 @@
                     <div class="title-service">
                         <h1>_Google Ads</h1>
                     </div>
-                    <p>Preços a partir de</p>
+                    <p>A partir de</p>
                     <div class="preco">
                         <h1>R$ 650</h1>
                         <p>/mês</p>
@@ -377,7 +377,7 @@
             <div class="depoimento">
                 <div class="perfil-depoimento">
                     <img class="imagem-depoimento" src="img/tochic.png" alt="Foto de perfil de To Chic">
-                    <p class="nome-depoimento">To Chic</p>
+                    <p class="nome-depoimento">Tô Chic</p>
                     <p class="instagram-depoimento">@lojaatochic</p>
                 </div>
                 <p class="comentario-depoimento">O vídeo dos macacões longos pode pausar<br><br>
@@ -417,29 +417,22 @@
     <section class="modal" id="modal">
         <div class="container-modal">
             
-                <form action="https://formsubmit.co/arthurlimapd@gmail.com" method="POST">
+                <form action="enviar.php" method="post" >
                     <h1 id="close-modal">X</h1>
 
                     <label for="name">Nome:</label>
-                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
 
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" placeholder="seuemail@email.com" required>
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com" required>
 
                     <label for="telefone">Telefone:</label>
-                    <input type="text" name="telefone" placeholder="(00) 0 0000-0000" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(00) 0 0000-0000" required>
 
-                    <!-- Scripts FormSubmit -->
-                    <input type="hidden" name="_next" value="https://api.whatsapp.com/send?phone=558184338374&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20alcan%C3%A7ar%20mais%20pessoas%20com%C2%A0o%C2%A0Tr%C3%A1fego%C2%A0Pago">
-
-                    <input type="hidden" name="_subject" value="Novo contato! | Site">
-
-                    <input type="text" name="_honey" style="display:none">
-
-                    <input type="hidden" name="_template" value="table">
+                    
                     
                     <!-- Botão de Envio -->
-                    <button type="submit">Ir para o Whatsapp</button>
+                    <button type="submit">>>> Ir para o Whatsapp</button>
                 </form>
             
         </div>

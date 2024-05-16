@@ -506,6 +506,10 @@ form button:hover{
     transform: scale(1.05);
 }
 
+form a{
+    color: var(--branco);
+}
+
 @media (max-width: 900px){
     nav{
         display: none;
