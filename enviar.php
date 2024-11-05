@@ -25,7 +25,7 @@ $stmt = $conn->prepare($sql);
 if ($stmt->execute()) {
     echo "Registro inserido com sucesso!";
     // Redireciona para o link desejado
-    header('Location: https://api.whatsapp.com/send?phone=558189978445&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20alcan%C3%A7ar%20mais%20pessoas%20com%20Tr%C3%A1fego%20Pago!');
+    header('Location: https://api.whatsapp.com/send?phone=5581984338374&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20alcan%C3%A7ar%20mais%20pessoas%20com%20Tr%C3%A1fego%20Pago!');
 } else {
     echo "Erro ao inserir registro: " . $stmt->error;
 }
