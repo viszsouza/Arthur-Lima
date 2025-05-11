@@ -16,9 +16,31 @@
     transition: 300ms;
     z-index: 99;
     cursor: pointer;
+    filter: drop-shadow(0px 0px 4px #00000072);
 }
 
 .flutua img:hover{
+    transform: scale(1.1);
+}
+
+.flutua1{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 140px;
+    z-index: 99;
+}
+
+.flutua1 img{
+    width: 100px;
+    transition: 300ms;
+    z-index: 99;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px #000000);
+}
+
+.flutua1 img:hover{
     transform: scale(1.1);
 }
 
@@ -82,6 +104,7 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .text-header h1{
@@ -564,6 +587,7 @@ form a{
 
     .text-header{
         padding-top: 20%;
+        text-align: center;
     }
 
     .quem-sou{
