@@ -64,3 +64,19 @@ buttons.forEach(function(button) {
 
 // Adicione um evento de clique ao elemento de fechamento do modal para fechá-lo
 close.addEventListener("click", closeModal);
+
+// Animações
+// Coletando o observador da página
+const myObserver = new IntersectionObserver( (entries) => {
+    entries.forEach( (entry) => {
+        if (entry.isIntersecting === true){
+            entry.target.classList.add('show')
+        } 
+    })
+})
+
+// Selecionando os elementos com a classe ".hidden"
+const elements = document.querySelectorAll('.hidden')
+
+// Selecionando 1 arquivos por vez da classe ".hidden"
+elements.forEach( (element) => myObserver.observe(element))
