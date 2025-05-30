@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Variaveis */
-:root{
+:root {
     --branco: #FFFFFF;
     --marrom: #EB5E28;
     --marrom-dark: #252422;
-    --gradiente: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(37, 36, 34,1) 100%);
+    --gradiente: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(37, 36, 34, 1) 100%);
     --shadow: rgba(0, 0, 0, 0.468) 0px 5px 15px;
     --fundo: rgba(0, 0, 0, 0.7)
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
     background-color: transparent;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -31,19 +31,44 @@ img {
 
 /* Animações */
 
-.hidden{
+.hidden {
     opacity: 0;
     filter: blur(15px);
     transform: translateY(50%);
     transition: all 1s;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
     transform: translateY(0);
     transition: all 1s;
+}
+
+
+
+
+.pulsando {
+    animation: pulse 1.5s infinite;
+    /* Defina a duração e a repetição */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* Estado inicial: tamanho normal */
+    }
+
+    50% {
+        transform: scale(1.06);
+        /* Estado intermediário: expandido */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Estado final: retorna ao tamanho normal */
+    }
 }
 
 /*Footer*/
@@ -57,19 +82,19 @@ footer {
     background-color: white;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: var(--preto);
     transition: 200ms;
 }
 
-footer a:hover{
+footer a:hover {
     transform: scale(1.1);
     color: var(--azul);
     text-decoration: underline;
 }
 
-.container-footer{
+.container-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,27 +102,27 @@ footer a:hover{
     gap: 50px;
 }
 
-.container-footer ul{
+.container-footer ul {
     width: 25%;
     height: 20%;
     list-style-type: none
 }
 
-.container-footer li{
+.container-footer li {
     margin-bottom: 10px;
 }
 
-.container-footer h3{
+.container-footer h3 {
     color: var(--rosa-dark);
     margin-bottom: 16px;
     font-weight: bold;
 }
 
-#redes{
+#redes {
     margin-left: 25px;
 }
 
-.redes-sociais{
+.redes-sociais {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -105,49 +130,52 @@ footer a:hover{
 }
 
 #instagram {
-    width: 70px; 
+    width: 70px;
     height: 70px;
 }
 
 #whatsapp {
-    width: 50px; 
+    width: 50px;
     height: 50px;
 }
+
 #copyright {
     border-top: 2px var(--marrom-dark) solid;
-    text-align: right; /* Alinhe para a direita */
+    text-align: right;
+    /* Alinhe para a direita */
     padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .container-footer{
+    .container-footer {
         flex-direction: column;
     }
 
-    .container-footer ul{
+    .container-footer ul {
         padding-left: 40px;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 426px) {
-    #footer_content{
-        grid-template-columns: repeat(1,1fr);
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
 }
 
 #copyright {
-    text-align: center; /* Alinhe para a direita */
+    text-align: center;
+    /* Alinhe para a direita */
     background-color: white;
     padding: 10px;
 }
 
-#copyright a{
+#copyright a {
     color: var(--marrom);
     transition: 300ms;
 }
 
-#copyright a:hover{
+#copyright a:hover {
     color: var(--marrom-dark);
 }
