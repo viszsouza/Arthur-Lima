@@ -456,6 +456,24 @@ span{
     transform: scale(1.05);
 }
 
+/* Negócios que á atendemos */
+.negocios-atendidos{
+    background-color: var(--branco);
+    padding: 40px 20px;
+}
+
+.container-negocios-atendidos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container-negocios-atendidos img{
+    max-width: 100px;
+}
+
 .fim{
     background-color: var(--marrom);
 }
