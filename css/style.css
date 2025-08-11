@@ -471,7 +471,12 @@ span{
 }
 
 .container-negocios-atendidos img{
-    max-width: 100px;
+    max-width: 150px;
+}
+
+/* Depoimentos Videos */
+.depoimentos-video{
+    padding: 40px 20px;
 }
 
 .fim{
