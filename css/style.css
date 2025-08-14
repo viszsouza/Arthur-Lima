@@ -475,8 +475,20 @@ span{
 }
 
 /* Depoimentos Videos */
-.depoimentos-video{
+.depoimentos-videos{
     padding: 40px 20px;
+}
+
+.container-videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container-videos iframe{
+    max-width: 500px;
 }
 
 .fim{
